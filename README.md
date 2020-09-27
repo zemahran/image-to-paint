@@ -58,3 +58,16 @@ optional arguments:
   --gc_height GC_HEIGHT
                         Height (in inches) for gcode.
 ```
+
+## Strokes to Gcode:
+
+Each stroke object has:
+ * move_list: represents a set of points as an array of tuples. Each tuple represents one point. These points are connected with lines that form the outer shape of the stroke.
+ * color: a tuple of RGB values. i.e (255,255,255).
+ * color_number: the position of the color number in the color palette.
+ * radius: the brush size of the stroke.
+ * brush_number: the position of the brush amongst the used brushes.
+ 
+ move_list represent the start & end points used for linear interpolation while plotting. So working with bezier curves will demand performing interpolation using the start, end & control points to construct data points ON the curve. Thus these can be used as an input to the Stroke constructor. So we'll have to translate each bezier curve to a Stroke object.
+
+
