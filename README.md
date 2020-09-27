@@ -88,6 +88,8 @@ Example with 14 colors:
  
 ## Brush sizes:
 
+## Steps:
+
 ## Strokes to Gcode:
 
 Each stroke object has:
