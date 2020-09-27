@@ -94,8 +94,6 @@ Example with 14 colors:
 ```
  ![](2-color-output.jpeg)
 
-## Steps:
-
 ## Strokes to Gcode:
 
 Each stroke object has:
