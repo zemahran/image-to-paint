@@ -65,6 +65,8 @@ These when plotted, appended, can construct the output image as a painting.
 Each brush size has a number of strokes (stroke objects). These can be mapped to actions. So a stroke is an action on the canvas.
 These actions are written as steps in the gcode output files.
 
+
+## Painting Output
 For example, if the brush size array looks like this [2, 4, 8]. 4 text files will be written. One for each brush size.
 The number of strokes increases as the brush radius decreases because smaller radii are used to represent/paint finer details within the painting.
 
