@@ -68,6 +68,12 @@ These actions are written as steps in the gcode output files.
 For example, if the brush size array looks like this [2, 4, 8]. 4 text files will be written. One for each brush size.
 The number of strokes increases as the brush radius decreases because smaller radii are used to represent/paint finer details within the painting.
 
+Painting example with 2k strokes:<br /><br />
+![](img-to-pnt.jpg)
+
+Painting example with 20k strokes:<br /><br />
+![](20k-strokes.jpeg)
+
 ## Colors:
 Passing a set of colors to image-to-paint.py will result in matching every pixel color value to the closest one in this set. Thus the output image colors will only have the colors of the set.
 
@@ -85,8 +91,6 @@ Example with 14 colors:
 !python ./image-to-paint/imageToPaint rsz_image.png output.jpg --f_grid 6 --brushes 2 4 8 --gcode --colors 000000 d8965a
 ```
  ![](2-color-output.jpeg)
- 
-## Brush sizes:
 
 ## Steps:
 
