@@ -59,6 +59,26 @@ optional arguments:
                         Height (in inches) for gcode.
 ```
 
+## Gcode Output:
+Passing a set of different brush stroke sizes (radii) will result in writing a text file with the gcode for every brush of them.
+These when plotted, appended, can construct the output image as a painting.
+Each brush size has a number of strokes (stroke objects). These can be mapped to actions. So a stroke is an action on the canvas.
+These actions are written as steps in the gcode output files.
+
+For example, if the brush size array looks like this [2, 4, 8]. 4 text files will be written. One for each brush size.
+The number of strokes increases as the brush radius decreases because smaller radii are used to represent/paint finer details within the painting.
+
+## Colors:
+Passing a set of colors to image-to-paint.py will result in matching every pixel color value to the closest one in this set. Thus the output image colors will only have the colors of the set.
+
+Example with 14 colors:
+```
+!python ./image-to-paint/imageToPaint rsz_image.png output.jpg --f_grid 6 --brushes 2 4 8 --colors 000000 FF0000 00FF00 0000FF FFFF00 FF00FF 00FFFF C0C0C0 808080 800000 808000 008000 008080 000080
+```
+ [image]
+ 
+ Example with 2 colors:
+
 ## Strokes to Gcode:
 
 Each stroke object has:
