@@ -85,6 +85,8 @@ Example with 14 colors:
 !python ./image-to-paint/imageToPaint rsz_image.png output.jpg --f_grid 6 --brushes 2 4 8 --gcode --colors 000000 d8965a
 ```
  ![](2-color-output.jpeg)
+ 
+## Brush sizes:
 
 ## Strokes to Gcode:
 
