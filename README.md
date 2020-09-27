@@ -75,9 +75,13 @@ Example with 14 colors:
 ```
 !python ./image-to-paint/imageToPaint rsz_image.png output.jpg --f_grid 6 --brushes 2 4 8 --colors 000000 FF0000 00FF00 0000FF FFFF00 FF00FF 00FFFF C0C0C0 808080 800000 808000 008000 008080 000080
 ```
- [image]
+ ![](14-color-output.jpeg)
  
  Example with 2 colors:
+ ```
+!python ./image-to-paint/imageToPaint rsz_image.png output.jpg --f_grid 6 --brushes 2 4 8 --gcode --colors 000000 d8965a
+```
+ ![](14-color-output.jpeg)
 
 ## Strokes to Gcode:
 
