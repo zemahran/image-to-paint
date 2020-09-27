@@ -71,6 +71,9 @@ The number of strokes increases as the brush radius decreases because smaller ra
 ## Colors:
 Passing a set of colors to image-to-paint.py will result in matching every pixel color value to the closest one in this set. Thus the output image colors will only have the colors of the set.
 
+Input image:
+ ![](rsz_image.png)
+
 Example with 14 colors:
 ```
 !python ./image-to-paint/imageToPaint rsz_image.png output.jpg --f_grid 6 --brushes 2 4 8 --colors 000000 FF0000 00FF00 0000FF FFFF00 FF00FF 00FFFF C0C0C0 808080 800000 808000 008000 008080 000080
